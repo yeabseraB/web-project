@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskFlow - To-Do App</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>TaskFlow</h1>
+
+    <!-- Search bar -->
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+
+    <!-- Main sections side by side -->
+    <div class="main-content">
+        <!-- Create Task Section -->
+        <div class="create-task">
+            <h2>Create Task</h2>
+            <form class="task-form">
+                <input type="text" id="title" placeholder="Title" required><br>
+                <textarea id="description" placeholder="Description" required></textarea><br>
+                <input type="text" id="category" placeholder="Category" required><br>
+                <input type="date" id="dueDate" required><br>
+                <button type="submit" id="addTask">Add Task</button>
+            </form>
+        </div>
+
+        <!-- My Tasks Section -->
+        <div class="my-tasks">
+            <h2>My Tasks</h2>
+            <div id="taskList"></div>
+        </div>
+    </div>
+</div>
+
+<script src="todolist.js"></script>
+</body>
+</html>

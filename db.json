@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": "eedf",
+      "title": "finish task",
+      "description": "complete",
+      "category": "personal and work",
+      "dueDate": "2025-12-12",
+      "completed": false
+    },
+    {
+      "id": "d8f3",
+      "title": "do project",
+      "description": "to-do list",
+      "category": "school",
+      "dueDate": "2025-12-25",
+      "completed": false
+    },
+    {
+      "id": "53a5",
+      "title": "read a book",
+      "description": "the alchemist",
+      "category": "study",
+      "dueDate": "2025-12-27",
+      "completed": false
+    }
+  ]
+}

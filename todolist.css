@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:bisque;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+#searchInput {
+    width: 300px;
+    padding: 6px 10px;
+    margin-bottom: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.main-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.create-task {
+     width: 450px;           
+    padding: 20px;          
+    margin-left: 20px;      
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 10px;     
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    text-align: left;
+    height: 100%
+}
+.task-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d1d5da;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 550x;
+    max-width: 90%;
+    margin: 0 auto; 
+
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.task-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+#addTask {
+    width: 100%;
+    padding: 12px;
+    background-color: #87c93b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#addTask:hover {
+    background-color: #2980b9;
+}
+
+
+.my-tasks {
+    flex: 1.8;
+    min-width: 400px;
+    text-align: left;
+}
+
+#taskList {
+    margin-top: 10px;
+}
+#taskList > div {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5da;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+#taskList > div:hover {
+    transform: scale(1.02);
+}
+
+#taskList h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+#taskList p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+#taskList button {
+    padding: 6px 12px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#taskList .edit {
+    background-color: #87c93b;
+    color: white;
+}
+
+#taskList .delete {
+    background-color:red;
+    color: white;
+}
+
+#taskList label {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#taskList input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
